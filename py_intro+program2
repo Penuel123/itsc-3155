@@ -1,0 +1,10 @@
+def check_divisibility(num1, num2):
+    divisible_nums = "" 
+    for i in range(num1, num2):
+        if (i % 7 == 0 and i % 5 != 0):
+            divisible_nums += str(i) + ", "
+    return divisible_nums
+
+first_num = int(input("Please enter first number: "))
+second_num = int(input("Please enter second number: "))
+print(check_divisibility(first_num, second_num))
